@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Camera Mouse\Camera Mouse 2018\Camera Mouse 2018.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A10CD6D-79F7-4EE9-B950-0AD64F765563}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Camera Mouse 2018</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CameraMouse.VideoCapture">
+      <HintPath>lib\CameraMouse.VideoCapture.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsInput">
+      <HintPath>lib\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CameraMouse\VideoCapture\USBCam.cs" />
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="a.cs" />
+    <Compile Include="b.cs" />
+    <Compile Include="c.cs" />
+    <Compile Include="d.cs" />
+    <Compile Include="e.cs" />
+    <Compile Include="f.cs" />
+    <Compile Include="CameraMouse\KBHookEventArgs.cs" />
+    <Compile Include="CameraMouse\KBDLLHookStruct.cs" />
+    <Compile Include="CameraMouse\HookType.cs" />
+    <Compile Include="CameraMouse\GlobalKBHook.cs" />
+    <Compile Include="CameraMouse\SoundPlayer.cs" />
+    <Compile Include="CameraMouse\User32.cs" />
+    <Compile Include="CameraMouse\UserInterface\CamCfgDescriptionsFrm.cs" />
+    <Compile Include="CameraMouse\UserInterface\CameraMouseConfig.cs" />
+    <Compile Include="CameraMouse\UserInterface\CameraSelector.cs" />
+    <Compile Include="CameraMouse\UserInterface\ExcludeForm.cs" />
+    <Compile Include="CameraMouse\UserInterface\FeatureDetector.cs" />
+    <Compile Include="CameraMouse\UserInterface\FeatureTracker.cs" />
+    <Compile Include="CameraMouse\UserInterface\EulaDialog.cs" />
+    <Compile Include="CameraMouse\UserInterface\MainForm.cs" />
+    <Compile Include="CameraMouse\UserInterface\OpenCV.cs" />
+    <Compile Include="CameraMouse\UserInterface\PauseWindow.cs" />
+    <Compile Include="CameraMouse\UserInterface\SettingsForm2.cs" />
+    <Compile Include="CameraMouse\UserInterface\StartupMsg.cs" />
+    <Compile Include="CameraMouse\UserInterface\Properties\Resources.cs" />
+    <Compile Include="CameraMouse\UserInterface\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="b.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\bceagle.jpeg" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\CamCfgDescriptionsFrm.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\CameraSelector.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\clickerx.wav" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\CMicon.ico" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\CMicon48.ico" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\double_click_disabled_small.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\double_click_enabled_small.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\EulaDialog.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\ExcludeForm.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\FormMaxBox.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\FormMinBox.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\indicator.gif" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\logo_cameramouse.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\MainForm.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\notify.wav" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\PauseOff2.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\PauseOn.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\PauseWindow.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\Properties\Resources.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\right_click_enabled_small.bmp" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\SettingsForm2.resx" />
+    <EmbeddedResource Include="CameraMouse\UserInterface\StartupMsg.resx" />
+    <EmbeddedResource Include="e.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
